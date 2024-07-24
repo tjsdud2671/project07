@@ -1,0 +1,36 @@
+@charset "UTF-8";
+*{
+	box-sizing: border-box;
+	margin:0;
+}
+.main-logo{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	padding: 20px 30px;
+}
+.logo-blog{
+	color: #fff;
+	font-weight: 700;
+	font-size: 25px;
+}
+.logo-sentence{
+	color: #fff;
+	font-size: 15px;
+}
+.main-img{
+	
+	display: flex;
+	width: 100%;
+}
+.main-img img{
+	display: block;
+	justify-content: center;
+	width: 100%;
+}
+
+@media screen and (min-width:768px){
+.main-img img{
+	height: 800px;
+	}
+}

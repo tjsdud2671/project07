@@ -1,0 +1,134 @@
+@charset "UTF-8";
+.main{
+	width: 100%;
+	height: auto;
+	background-image: url("https://i.pinimg.com/564x/2e/96/ee/2e96ee73597486153b0c464c1bbda15d.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: calc(100vh - 50px);
+}
+.main_wrapper{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px 0;
+	width: 90%;
+	margin-left: 10px;
+}
+.main-left,
+.main-right{
+	display: flex;
+	flex-direction: column;
+	background-color: rgba( 255, 255, 255, 0.5 );
+	border-radius: 8px;
+	color: #fff;
+	width: 80%;
+	margin-bottom: 20px;
+	
+}
+.main-left p{
+	font-size: 15px;
+}
+.blogc-img,
+.neighbor{
+	display: block;
+	text-align: center;
+}
+.blogc-img img{
+	width: 70%;
+	height: 80%;
+	padding: 10px 0;
+}
+.neighbor{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 0;
+}
+.neighbor-f{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-150%);
+	font-size: 15px;
+	font-weight: 700;
+	color: #fff;
+}
+.neighbor-f:hover{
+	opacity: 0.7;
+}
+.neighbor img{
+	width: 65%;
+	height: auto;
+}
+
+.logout-neighbor{
+	display: block;
+}
+.logout-neighbor p{
+	text-align: center;
+	font-size: 14px;
+}
+
+
+
+@media screen and (min-width:1200px){
+.main_wrapper{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	padding: 20px 0;
+	width: 80%;
+	margin-left: 10%;
+}	
+.main-left{
+	height: 580px;
+	margin-right: 20px;
+}
+.main-right{
+	height: 580px;
+	margin-left: 20px;
+}
+.blogc-img{
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: 450px;
+}
+.blogc-img img{
+	width: 70%;
+	height: 100%;
+	padding: 30px 0;
+}
+.main-left p{
+	font-size: 18px;
+}
+.neighbor-f{
+	font-size: 25px;
+	font-weight: 700;
+}
+.neighbor img{
+	width: 65%;
+}
+.logout-neighbor p{
+	font-size: 20px;
+}
+.main-img{
+	position: relative;
+}
+.login-img{
+	position: fixed;
+	top: 80%;
+	left: 88%;
+}
+.login-img:hover{
+	opacity: 0.7;
+}
+.login-img img{
+	width: 230px;
+	height: 190px;
+}
+}
