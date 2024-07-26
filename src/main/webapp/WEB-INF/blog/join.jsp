@@ -12,6 +12,27 @@ prefix="fn" %>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>join.jsp</title>
 <link rel="stylesheet" href="css/join.css">
+<script>
+	'use strict';
+	//아이디와 닉네임 중복버튼 클릭 확인
+	let idSw = 0;
+	let nickSw = 0;
+	//아이디 중복체크
+	function idCheck(){
+		let mid = joinForm.mid.value;
+		let url = "userIdCheck.do?mid="+mid;
+		
+		if(mid.trim()==""){
+			alert("아이디를 입력해주세요.");
+			joinForm.mid.focus();
+		}
+		else{
+			idSw = 1;
+			joinForm.mid.readOnly = true;
+			window.open(url,"nWin","width=580px,height=250px");
+		}
+	}
+</script>
 </head>
 <body>
 	<div class="join">
@@ -19,8 +40,9 @@ prefix="fn" %>
 		<div class="join_wrapper">
 			<form name="joinForm" method="post" action="#">
 				<div class="form-group">
-					<label for="mid">아이디&nbsp;<input type="button" value="아이디 중복체크" id="midBtn" onclick="#"></label><br/>
-					<input type="text" class="form-control" name="mid" id="mid" placeholder="아이디를 입력하세요." required autofocus/>
+					<label for="mid">아이디</label><br/>
+					<input type="text" class="form-control" name="mid" id="mid" placeholder="아이디를 입력하세요." required autofocus/><br/>
+					<input type="button" value="✔️아이디 중복체크" id="midBtn" onclick="idCheck()">
 				</div>
 				<div class="form-group">
 					<label for="pwd">비밀번호</label><br/>
@@ -31,8 +53,9 @@ prefix="fn" %>
 					<input type="text" class="form-control" name="name" id="name" placeholder="성명을 입력하세요." required/>
 				</div>
 				<div class="form-group">
-					<label for="nick">닉네임&nbsp;<input type="button" value="닉네임 중복체크" id="nickBtn" onclick="#"></label><br/>
-					<input type="text" class="form-control" name="nick" id="nick" placeholder="닉네임을 입력하세요." required/>
+					<label for="nick">닉네임</label><br/>
+					<input type="text" class="form-control" name="nick" id="nick" placeholder="닉네임을 입력하세요." required/><br/>
+					<input type="button" value="✔️닉네임 중복체크" id="nickBtn" onclick="#">
 				</div>
 			    <div class="form-group">
 			       <span class="input-group-text">성별</span> <br/>

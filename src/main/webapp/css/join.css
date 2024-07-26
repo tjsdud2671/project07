@@ -46,8 +46,8 @@
 	border: none;
 	border-radius: 8px;
 	outline-style: none;
-	background-color: #DC143C;
-	color: #fff;
+	background-color: #fff;
+	color: #00008B;
 }
 #midBtn:hover,
 #nickBtn:hover{
@@ -68,7 +68,7 @@
 	border: 1px solid gainsboro;
 	border-radius: 8px;
 	background-color: #fff;
-	color: #DC143C;
+	color: #2E8B57;
 	font-size: 14px;
 	font-weight: 700;
 	width: 100px;
@@ -106,11 +106,15 @@
 	border: 1px solid gainsboro;
 	border-radius: 8px;
 	background-color: #fff;
-	color: #DC143C;
+	color: #2E8B57;
 	font-size: 18px;
 	font-weight: 700;
 	width: 100px;
 	height: 28px;
+}
+#midBtn,
+#nickBtn{
+	height: 20px;
 }
 }
 	}
